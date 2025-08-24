@@ -1,0 +1,124 @@
+/* ========================================= */
+/*      Mobile Responsive Styles           */
+/* For screens 768px wide and smaller      */
+/* ========================================= */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+    }
+
+    /* Hamburger Menu Styles */
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        z-index: 1001; /* Ensure it's above other content */
+    }
+
+    .hamburger-menu span {
+        width: 2rem;
+        height: 0.25rem;
+        background-color: #2d3436;
+        border-radius: 10px;
+        transition: all 0.3s linear;
+    }
+    
+    /* Hamburger animation when active */
+    .hamburger-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(0.5rem, 0.5rem);
+    }
+    .hamburger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(0.5rem, -0.5rem);
+    }
+
+    /* Navigation Menu for Mobile */
+    .nav-menu {
+        display: none; /* Hide by default */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        gap: 2rem;
+    }
+
+    .nav-menu.active {
+        display: flex; /* Show when active */
+    }
+    
+    .nav-menu li a {
+        font-size: 1.5rem;
+        color: #2d3436;
+    }
+    
+    .logo-section {
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    
+    .logo-section h1 {
+        font-size: 1.5rem;
+    }
+    
+    .logo-section .tagline {
+        display: none; /* Hide tagline on small screens for cleaner look */
+    }
+
+    /* Ensure header is always visible on mobile */
+    .sticky-top {
+        position: fixed;
+        transform: translateY(0) !important; /* Override JS scroll effect */
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-section {
+        padding-top: 8rem; /* Add padding to prevent overlap with fixed header */
+    }
+    
+    /* Other styles remain the same */
+    .hero-stats { gap: 2rem; }
+    .stat .number { font-size: 2.5rem; }
+    .founder-content { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
+    .founder-image img { width: 240px; height: 240px; }
+    .testimonial { padding: 2rem 1.5rem; }
+    .course-card { padding: 2.5rem 2rem; }
+    .container { padding: 0 1rem; }
+    .primary-cta { padding: 1rem 2rem; font-size: 1rem; }
+}
+
+/* Hide hamburger on desktop */
+@media (min-width: 769px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+/* ========================================= */
+/* For smaller mobile screens (e.g., phones) */
+/* For screens 480px wide and smaller      */
+/* ========================================= */
+
+@media (max-width: 480px) {
+    .hero-features { grid-template-columns: 1fr; }
+    .hero-stats { flex-direction: column; gap: 1.5rem; }
+    .accred-slider { gap: 1.5rem; }
+    .accred-item img { width: 45px; height: 45px; }
+    .course-options { grid-template-columns: 1fr; }
+}

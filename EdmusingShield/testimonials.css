@@ -1,0 +1,122 @@
+/* ========================================= */
+/*   REDESIGNED Testimonials Section Styles  */
+/* ========================================= */
+
+.testimonials-section {
+    background: #f8f9ff;
+    padding: 6rem 0;
+    overflow: hidden;
+}
+
+.testimonials-section .section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #2d3436;
+}
+
+.swiper-container {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.swiper-slide {
+    width: 60%;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 0.5;
+    transform: scale(0.9);
+}
+
+.swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-body {
+    padding: 2.5rem;
+    position: relative;
+}
+
+.testimonial-body::before {
+    content: '“';
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    font-size: 5rem;
+    color: rgba(102, 126, 234, 0.1);
+    font-family: serif;
+    line-height: 1;
+}
+
+.student-feedback {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #636e72;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 2.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+}
+
+.author-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ffffff;
+    flex-shrink: 0;
+}
+
+.author-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-details .student-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.author-details .student-location {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #667eea;
+}
+
+@media (max-width: 768px) {
+    .swiper-slide {
+        width: 90%;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .testimonial-body {
+        padding: 2rem 1.5rem;
+    }
+
+    .testimonial-author {
+        padding: 1rem 1.5rem;
+    }
+}
