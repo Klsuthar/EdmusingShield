@@ -1,0 +1,73 @@
+/* ========================================= */
+/*      New Courses Section Styles         */
+/* ========================================= */
+
+.courses-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+}
+
+.courses-section .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.courses-section .section-header h2 {
+    color: #2d3436;
+}
+
+.courses-section .section-header p {
+    font-size: 1.1rem;
+    color: #636e72;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.course-layout-item {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.course-image {
+    flex: 1 1 45%; /* Image takes up 45% of the space */
+}
+
+.course-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.course-details {
+    flex: 1 1 55%; /* Text takes up 55% of the space */
+}
+
+.course-details h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: #2d3436;
+    margin-bottom: 1.5rem;
+}
+
+.course-details p {
+    color: #636e72;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+/* This class reverses the order for alternating layout */
+.course-layout-item.image-right {
+    flex-direction: row-reverse;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .course-layout-item,
+    .course-layout-item.image-right {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+}
