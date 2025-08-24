@@ -1,0 +1,100 @@
+/* ========================================= */
+/*   FIXED Accreditations Section Styles     */
+/* ========================================= */
+
+.accreditations-section {
+    padding: 6rem 0;
+    background-color: #ffffff;
+}
+
+.accreditations-section .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.accreditations-section .section-header h2 {
+    color: #2d3436;
+    margin-bottom: 1rem;
+}
+
+.accreditations-section .section-header p {
+    font-size: 1.1rem;
+    color: #636e72;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* PC aur Tablet ke liye responsive grid */
+.accreditations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+}
+
+.accred-item {
+    background: #f8f9ff;
+    border: 1px solid #e8ecf3;
+    border-radius: 15px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.accred-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    background: #ffffff;
+    border-color: #dde2eb;
+}
+
+.accred-item img {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+    filter: grayscale(80%);
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+
+.accred-item:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+    /* FIX 1: Logo ab hover par 10% bada hoga */
+    transform: scale(1.1); 
+}
+
+.accred-item span {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #636e72;
+    line-height: 1.4;
+}
+
+/* ===== FIX 2: MOBILE KE LIYE SPECIAL LAYOUT ===== */
+@media (max-width: 768px) {
+    .accreditations-grid {
+        /* Mobile par 2 columns ka grid banayega */
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem; /* Mobile par thoda kam gap */
+    }
+
+    /* Aakhri item ko select karega */
+    .accreditations-grid .accred-item:last-child {
+        /* Yeh batayega ki aakhri item grid ki pehli line se aakhri line tak jagah le */
+        grid-column: 1 / -1;
+        /* Item ko apne full-width cell ke andar center mein laane ke liye */
+        justify-self: center;
+        width: calc(50% - 0.75rem); /* Taki uski chaurai baaki items jaisi lage */
+    }
+}
+
+@media (max-width: 400px) {
+    .accreditations-grid .accred-item:nth-last-child(2):nth-child(odd) {
+        grid-column: 1 / -1;
+    }
+}
