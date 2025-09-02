@@ -1,0 +1,125 @@
+/* ========================================= */
+/*        Contact Page Specific Styles       */
+/* ========================================= */
+
+/* --- Page Background --- */
+.contact-page {
+    background: linear-gradient(135deg, #e6e9f0 0%, #eef1f5 100%);
+}
+
+.contact-page .contact-section-v2 {
+    background: transparent;
+}
+
+/* --- Section Header --- */
+.contact-page .section-title {
+    color: #495057;
+}
+
+.contact-page .section-subtitle {
+    color: #6c757d;
+}
+
+.contact-page .section-title::after {
+    background: linear-gradient(135deg, #8989ba 0%, #9c96c8 100%);
+}
+
+/* --- Contact Cards & Social Wrapper --- */
+.contact-page .contact-card,
+.contact-page .social-media-wrapper {
+    background: linear-gradient(135deg, #8989ba 0%, #9c96c8 100%);
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    color: #f0f0f0;
+}
+
+.contact-page .contact-card:hover,
+.contact-page .social-media-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Card-specific Text and Icons --- */
+.contact-page .contact-icon-wrapper {
+    background: rgba(255, 255, 255, 0.1);
+    color: #f0f0f0;
+}
+
+.contact-page .contact-text-content h4,
+.contact-page .social-media-wrapper h3 {
+    color: #f0f0f0;
+}
+
+.contact-page .contact-text-content p,
+.contact-page .social-media-wrapper p {
+    color: rgba(240, 240, 240, 0.8);
+}
+
+.contact-page .contact-text-content a {
+    color: #f0f0f0;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.contact-page .social-icon-v2 {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #f0f0f0;
+}
+
+.contact-page .social-icon-v2:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-page .social-icon-v2 i {
+    color: #f0f0f0;
+}
+
+
+/* ========================================= */
+/*   Responsive Styles for Contact Page      */
+/* ========================================= */
+
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section-v2 {
+        padding: 8rem 1rem 4rem 1rem; /* Increased top padding for mobile to clear header */
+    }
+
+    .contact-grid {
+        gap: 2.5rem; /* Adjust gap for smaller screens */
+    }
+
+    .contact-card {
+        flex-direction: column; /* Stack icon and text vertically */
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .contact-text-content h4 {
+        font-size: 1.1rem;
+    }
+
+    .contact-text-content p {
+        font-size: 0.9rem;
+    }
+
+    .social-media-wrapper {
+        padding: 2rem 1.5rem;
+        text-align: center;
+    }
+
+    .social-media-wrapper h3 {
+        font-size: 1.5rem;
+    }
+}

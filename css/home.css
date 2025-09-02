@@ -1,0 +1,71 @@
+/* ========================================= */
+/*        Home Page Specific Styles        */
+/* ========================================= */
+
+/* --- Home Page Background --- */
+.home-page {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+}
+
+/* --- Pillar Cards --- */
+.home-page .pillar-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    color: #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.home-page .pillar-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+}
+
+.home-page .pillar-card h3,
+.home-page .pillar-card p {
+    color: #f0f0f0;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/* --- Testimonial Cards --- */
+.home-page .testimonial-card {
+    background: linear-gradient(135deg, #ff8c42 0%, #ff3f8b 100%);
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    color: #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.home-page .testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+}
+
+.home-page .testimonial-card .student-name,
+.home-page .testimonial-card .student-location,
+.home-page .testimonial-card .student-feedback {
+    color: #f0f0f0;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.home-page .testimonial-author {
+    background: rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* --- Typography and Colors for Home Page --- */
+.home-page .section-title {
+    color: #333;
+    text-shadow: none;
+}
+
+.home-page .section-subtitle {
+    color: #555;
+}
+
+.home-page .section-title::after {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}

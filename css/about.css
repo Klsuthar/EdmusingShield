@@ -1,0 +1,211 @@
+/* ========================================= */
+/*        About Page Specific Styles         */
+/* ========================================= */
+
+/* --- Page Background --- */
+.about-page {
+    background: linear-gradient(135deg, #e6e9f0 0%, #eef1f5 100%);
+}
+
+/* --- General Text and Accent Colors --- */
+.about-page .section-title,
+.about-page h2 {
+    color: #333333;
+    font-weight: 800;
+}
+
+.about-page .section-subtitle {
+    color: #555555;
+}
+
+.about-page .section-title::after {
+    background: linear-gradient(135deg, #8989ba 0%, #9c96c8 100%);
+}
+
+/* --- Main Cards --- */
+.about-page .pillar-card,
+.about-page .founder-section-wrapper {
+    background: linear-gradient(135deg, #8989ba 0%, #9c96c8 100%);
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    color: #f0f0f0;
+}
+
+/* --- "Why Us" Section --- */
+.about-page .why-us-section {
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    margin: 4rem 2rem;
+    padding: 4rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.about-page .why-us-section .section-header .section-title,
+.about-page .why-us-section .section-header .section-subtitle {
+    color: #fff;
+}
+
+.about-page .why-us-section .feature-card {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #333;
+}
+
+.about-page .why-us-section .feature-card h3,
+.about-page .why-us-section .feature-card p {
+    color: #333;
+}
+
+/* --- "Accreditations" Section --- */
+.about-page .accreditations-section {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    margin: 4rem 2rem;
+    padding: 4rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.about-page .accreditations-section .section-header .section-title,
+.about-page .accreditations-section .section-header .section-subtitle {
+    color: #fff;
+}
+
+.about-page .accreditations-section .accred-item {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #333;
+}
+
+.about-page .accreditations-section .accred-item span {
+    color: #333;
+}
+
+
+/* --- Text on Cards --- */
+.about-page .pillar-card h3,
+.about-page .founder-section-wrapper h2,
+.about-page .founder-section-wrapper h3,
+.about-page .pillar-card p,
+.about-page .founder-text blockquote,
+.about-page .founder-details .title,
+.about-page .stat .number,
+.about-page .stat .label {
+    color: #f0f0f0;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.about-page .pillar-card:hover,
+.about-page .founder-section-wrapper:hover,
+.about-page .feature-card:hover,
+.about-page .accred-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Presence Section --- */
+.about-page .our-presence-section {
+    background: linear-gradient(135deg, #8989ba 0%, #9c96c8 100%);
+    margin: 4rem 2rem;
+    padding: 4rem 0;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* --- Flag Slider for "Our Presence" Section --- */
+.flags-slider {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+}
+
+.flags-track {
+    display: flex;
+    width: calc(180px * 22); /* (150px width + 30px margin) * 11 flags * 2 */
+    animation: scroll 40s linear infinite;
+}
+
+.flags-slider:hover .flags-track {
+    animation-play-state: paused;
+}
+
+.flag-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    margin: 0 15px;
+}
+
+.flag-item img {
+    height: 60px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.flag-item span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #f0f0f0;
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-180px * 11)); }
+}
+
+/* --- Responsive Styles for About Page --- */
+@media (max-width: 768px) {
+    .about-page .why-us-section,
+    .about-page .accreditations-section,
+    .about-page .our-presence-section {
+        margin: 2rem 1rem;
+        padding: 2rem;
+    }
+
+    .about-page .our-presence-section {
+        padding: 2rem 0;
+    }
+
+    .flags-track {
+        width: calc(120px * 22); /* (100px width + 20px margin) * 11 flags * 2 */
+        animation-duration: 25s; /* Faster speed for mobile */
+    }
+
+    .flag-item {
+        width: 100px;
+        margin: 0 10px;
+    }
+
+    .flag-item img {
+        height: 40px;
+    }
+
+    .flag-item span {
+        font-size: 12px;
+    }
+
+    @keyframes scroll {
+        from { transform: translateX(0); }
+        to { transform: translateX(calc(-120px * 11)); }
+    }
+}
+
+/* --- Dark and Bold Text Overrides --- */
+.about-page .why-us-section .section-header .section-title,
+.about-page .pillar-card h3,
+.about-page .founder-text h2,
+.about-page .founder-details h3,
+.about-page .founder-details .title,
+.about-page .stat .number,
+.about-page .stat .label,
+.about-page .accreditations-section .section-header .section-title,
+.about-page .accreditations-section .section-header .section-subtitle {
+    color: #2c3e50 !important;
+    font-weight: 800 !important;
+    text-shadow: none !important;
+}

@@ -5,310 +5,372 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edmusing Shield</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="banner.css">
-    <link rel="stylesheet" href="mobile.css">
-    <link rel="stylesheet" href="courses.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="accreditations.css">
-    <link rel="stylesheet" href="testimonials.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/home.css">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #f59e0b;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f8fafc;
+            --bg-white: #ffffff;
+            --border-color: #e5e7eb;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f8fafc 100%);
+            min-height: 100vh;
+            color: var(--text-dark);
+        }
+        
+        .hero-slider-section {
+            background: linear-gradient(135deg, #fef7cd 0%, #fde68a 30%, #fed7aa 70%, #fecaca 100%);
+        }
+        
+        .about-us-section {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%);
+            border-top: 3px solid var(--accent-color);
+            padding: 60px 0;
+        }
+        
+        .section-header {
+            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 50%, #7dd3fc 100%);
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            color: var(--text-dark);
+        }
+        
+        .section-subtitle {
+            color: var(--text-light);
+        }
+        
+        .pillar-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px rgba(37, 99, 235, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        
+        .testimonials-section {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 30%, #fed7aa 70%, #fecaca 100%);
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, #ffffff 0%, #fffbeb 100%);
+            border-left: 4px solid var(--accent-color);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15);
+        }
+        
+        .sticky-contact-button {
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            color: white;
+        }
+    </style>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
-    <header class="sticky-top">
-        <nav class="navbar">
-            <div class="logo-section">
-                <img src="assets/images/logo/edmusing-shield-logo.png" alt="EdmusingShield">
-                <h1>Edmusing Shield</h1>
-                <p class="tagline">Empowering Minds, Shaping Futures</p>
-            </div>
-            <div class="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="home-page">
 
-    <section class="hero-banner" id="home">
-        <div class="slide" style="background-image: url('assets/images/banner/banner1.png');"></div>
-        <div class="slide" style="background-image: url('assets/images/banner/banner2.png');"></div>
-        <div class="slide" style="background-image: url('assets/images/banner/banner3.png');"></div>
-    </section>
+    <div id="header-placeholder"></div>
 
-    <section class="cta-section">
-        <button class="primary-cta">Enroll Today</button>
-    </section>
+    <main>
+        <section class="hero-slider-section" id="home">
+            <div class="hero-swiper-container" id="hero-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(assets/images/banner/banner1.webp);"></div>
+                    <div class="swiper-slide" style="background-image: url(assets/images/banner/banner2.webp);"></div>
+                    <div class="swiper-slide" style="background-image: url(assets/images/banner/banner3.webp);"></div>
+                    <div class="swiper-slide" style="background-image: url(assets/images/banner/banner4.webp);"></div>
+                    <div class="swiper-slide" style="background-image: url(assets/images/banner/banner3.webp);"></div>
+                    <div class="swiper-slide" style="background-image: url(assets/images/banner/banner1.webp);"></div>
+                    <div class="swiper-slide" style="background-image: url(assets/images/banner/banner2.webp);"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
 
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1 class="hero-title">Choose Edmusing Shield for the Right Reasons</h1>
-            <div class="hero-features">
-                <div class="feature-card">
-                    <icon>🎯</icon>
-                    <h3>Personalized Learning</h3>
-                    <p>Tailored coaching for every student's unique needs</p>
+        <section class="about-us-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Crafting Future Leaders, One Student at a Time</h2>
+                    <p class="section-subtitle">At Edmusing Shield, we don't just teach subjects; we build futures. Our
+                        philosophy is rooted in
+                        the belief that every student has unique potential waiting to be unlocked.</p>
                 </div>
-                <div class="feature-card">
-                    <icon>👨‍🏫</icon>
-                    <h3>Expert Tutors</h3>
-                    <p>Elite educators with proven track records</p>
-                </div>
-                <div class="feature-card">
-                    <icon>🚀</icon>
-                    <h3>Guaranteed Results</h3>
-                    <p>98% success rate in competitive exams</p>
-                </div>
-            </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="number" data-count="10000" data-suffix="+">0</span>
-                    <span class="label">Students Across The Globe</span>
-                </div>
-                <div class="stat">
-                    <span class="number" data-count="300" data-suffix="+">0</span>
-                    <span class="label">Teachers on Panel</span>
-                </div>
-                <div class="stat">
-                    <span class="number" data-count="400" data-suffix="+">0</span>
-                    <span class="label">Class Hours Daily</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="accreditations-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Globally Recognized & Accredited</h2>
-                <p>Our commitment to excellence is validated by international standards, ensuring you receive the
-                    highest quality of education.</p>
-            </div>
-            <div class="accreditations-grid">
-                <div class="accred-item">
-                    <img src="assets/images/certificate/iso-logo.png" alt="ISO Logo">
-                    <span>ISO Certified</span>
-                </div>
-                <div class="accred-item">
-                    <img src="assets/images/certificate/iso-9001-logo.png" alt="ISO 9001 Logo">
-                    <span>ISO 9001:2015 Quality Management</span>
-                </div>
-                <div class="accred-item">
-                    <img src="assets/images/certificate/euro-uk-accreditation.png" alt="Euro UK Accreditation">
-                    <span>Euro UK Accreditation Forum</span>
-                </div>
-                <div class="accred-item">
-                    <img src="assets/images/certificate/international-standards-certification.png"
-                        alt="International Standards Certification">
-                    <span>International Standards Certified</span>
-                </div>
-                <div class="accred-item">
-                    <img src="assets/images/certificate/INTERNATIONAL-CERTIFICATION-And-INSPECTION-UK.png"
-                        alt="International Certification and Inspection UK">
-                    <span>ICI UK Certified</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="courses-section" id="courses">
-        <div class="container">
-            <div class="section-header">
-                <h2>Courses We Offer</h2>
-                <p>Learn with expert mentors and advance your academic and career goals.</p>
-            </div>
-            <div class="course-layout-item">
-                <div class="course-image">
-                    <img src="assets/images/courses/math-science.png" alt="Mathematics and Science tutoring">
-                </div>
-                <div class="course-details">
-                    <h3>Mathematics & Science</h3>
-                    <p>Build a strong foundation for school and competitive exams like IIT, JEE, and JEE Mains across
-                        Physics, Chemistry, and Biology with our expert-led, structured plans.</p>
-                    <button class="course-btn">Explore Mathematics</button>
-                </div>
-            </div>
-            <div class="course-layout-item image-right">
-                <div class="course-image">
-                    <img src="assets/images/courses/english.png" alt="English language courses">
-                </div>
-                <div class="course-details">
-                    <h3>English</h3>
-                    <p>Receive personalized 1:1 live coaching for complete preparation for exams like IELTS, TOEFL,
-                        NAPLAN, and AP, while significantly enhancing your communication skills.</p>
-                    <button class="course-btn">Explore English</button>
-                </div>
-            </div>
-            <div class="course-layout-item">
-                <div class="course-image">
-                    <img src="assets/images/courses/languages.png" alt="Foreign language learning">
-                </div>
-                <div class="course-details">
-                    <h3>Foreign Languages</h3>
-                    <p>Learn popular global languages such as French, German, and Spanish with our comprehensive
-                        curriculum that provides clear pathways from beginner to advanced levels.</p>
-                    <button class="course-btn">Explore Languages</button>
-                </div>
-            </div>
-            <div class="course-layout-item image-right">
-                <div class="course-image">
-                    <img src="assets/images/courses/finance.png" alt="Financial literacy course">
-                </div>
-                <div class="course-details">
-                    <h3>Financial Literacy</h3>
-                    <p>Develop practical money management skills, effective budgeting habits, and smart financial
-                        decision-making for real-life scenarios with our hands-on course.</p>
-                    <button class="course-btn">Explore Finance</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about-us-section" id="about">
-        <div class="container">
-
-            <!-- Founder section is now INSIDE the About Us section -->
-            <div class="founder-section">
-                <div class="founder-content">
-                    <div class="founder-image">
-                        <img src="assets/images/dr-arpita-de.jpeg" alt="Dr. Arpita De Chatterjee">
-                        <div class="founder-badge">Founder & CEO</div>
+                <div class="about-pillars">
+                    <div class="pillar-card">
+                        <div class="pillar-icon">💡</div>
+                        <h3>Our Mission</h3>
+                        <p>To provide accessible, high-quality education that empowers students with knowledge, critical
+                            thinking skills, and the confidence to excel in a competitive world.</p>
                     </div>
-                    <div class="founder-text">
-                        <h2>A Message From Our Founder</h2>
-                        <blockquote>
-                            "My vision is to empower students with the right blend of academic knowledge, life skills,
-                            and confidence so they can thrive. We aim to transform education into an engaging,
-                            innovative, and globally accessible journey."
-                        </blockquote>
-                        <div class="founder-details">
-                            <h3>Dr. Arpita De Chatterjee</h3>
-                            <p class="title">M.A. English, Ph.D. in Education & Global Learning</p>
-                        </div>
+                    <div class="pillar-card">
+                        <div class="pillar-icon">🌍</div>
+                        <h3>Our Vision</h3>
+                        <p>To be a global leader in personalized online education, creating an innovative and engaging
+                            learning environment that transcends geographical boundaries.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-icon">🤝</div>
+                        <h3>Our Approach</h3>
+                        <p>We combine elite educators, cutting-edge technology, and a tailored curriculum to create a
+                            holistic learning experience that addresses the individual needs of each student.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="testimonials-section">
-        <h2 class="section-title">🌟 Student Testimonials</h2>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <div class="testimonial-body">
-                            <p class="student-feedback">Her classes were engaging and boosted my debating and
-                                communication skills immensely. As a Brand Marketer, I've found her teachings invaluable
-                                to my growth.</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-image">
-                                <img src="assets/images/testimonials/khusshi-bedi.png" alt="Khusshi Bedi">
+        </section>
+
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">🌟 Student Testimonials</h2>
+                </div>
+            </div>
+            <div class="testimonials-swiper-container">
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-body">
+                                <p class="student-feedback">I've had the privilege of learning Advanced English from
+                                    Arpita
+                                    Ma'am, and it was truly transformative. Her classes were engaging and boosted my
+                                    debating
+                                    and communication skills immensely. As a Brand Marketer and Stylist, I've found her
+                                    teachings invaluable to my growth. She's more than a teacher-she's a mentor who
+                                    truly
+                                    believes in her students. I'm deeply grateful for her guidance and highly recommend
+                                    her to
+                                    anyone looking to grow in confidence and language.</p>
                             </div>
-                            <div class="author-details">
-                                <h3 class="student-name">Khusshi Bedi</h3>
-                                <p class="student-location">Bangalore</p>
+                            <div class="testimonial-author">
+                                <div class="author-image"><img src="assets/images/testimonials/khusshi-bedi.webp"
+                                        alt="Khusshi Bedi"></div>
+                                <div class="author-details">
+                                    <h3 class="student-name">Khusshi Bedi</h3>
+                                    <p class="student-location">Bangalore</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <div class="testimonial-body">
-                            <p class="student-feedback">Her ability to encourage, guide, and bring out the best in him
-                                has helped him grow into a confident and articulate learner. Beyond academics, she
-                                instilled values of discipline and self-belief.</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-image">
-                                <img src="assets/images/testimonials/sajith-madhav.png" alt="Sajith Madhav">
+
+                    <!-- Testimonial 2: Riddhika Sarkar -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-body">
+                                <p class="student-feedback">I am Riddhika Sarkar, a student of EDMUSING SHIELD, where I
+                                    learnt
+                                    English under the guidance of Dr. Arpita De Chatterjee. When I began, I was
+                                    struggling and
+                                    scored only around 50 marks in English. With Ma'am's constant support, patient
+                                    teaching, and
+                                    encouragement, I transformed my performance and achieved 94 marks in my CBSE Grade
+                                    12 exam.
+                                    I will always remain grateful to her for guiding me and bringing out the best in me.
+                                </p>
                             </div>
-                            <div class="author-details">
-                                <h3 class="student-name">Sajith Madhav</h3>
-                                <p class="student-location">(Parent)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <div class="testimonial-body">
-                            <p class="student-feedback">Her guidance helped boost my confidence, motivated me to learn
-                                consistently, and enhanced my skills. Because of her, I achieved an excellent score of
-                                94% in English.</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-image">
-                                <img src="assets/images/testimonials/riddhika-sarkar.png" alt="Riddhika Sarkar">
-                            </div>
-                            <div class="author-details">
-                                <h3 class="student-name">Riddhika Sarkar</h3>
-                                <p class="student-location">West Bengal</p>
+                            <div class="testimonial-author">
+                                <div class="author-image"><img src="assets/images/testimonials/riddhika-sarkar.webp"
+                                        alt="Riddhika Sarkar"></div>
+                                <div class="author-details">
+                                    <h3 class="student-name">Riddhika Sarkar</h3>
+                                    <p class="student-location">CBSE Grade 12</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <div class="testimonial-body">
-                            <p class="student-feedback">Her ability to encourage, guide, and bring out the best in him
-                                has helped him grow into a confident and articulate learner. Beyond academics, she
-                                instilled values of discipline and self-belief.</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-image">
-                                <img src="assets/images/testimonials/sajith-madhav.png" alt="Sajith Madhav">
+
+                    <!-- Testimonial 3: Sajith Madhav -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-body">
+                                <p class="student-feedback">I am deeply grateful to Ms. Arpita De Chatterjee for her
+                                    unwavering
+                                    support and exceptional guidance in my son's academic and personal growth over the
+                                    past five
+                                    years. As his English teacher and mentor, she has nurtured his love for language,
+                                    literature, and critical thinking with great dedication. Her ability to encourage,
+                                    guide,
+                                    and bring out the best in him has helped him grow into a confident and articulate
+                                    learner.
+                                    Beyond academics, she has instilled values of discipline and self-belief that will
+                                    stay with
+                                    him for life. We feel truly fortunate to have had her in his journey-and look
+                                    forward to our
+                                    daughter learning under her as well. Thank you, Ms. Arpita, for making a lasting
+                                    difference.
+                                </p>
                             </div>
-                            <div class="author-details">
-                                <h3 class="student-name">Sajith Madhav</h3>
-                                <p class="student-location">(Parent)</p>
+                            <div class="testimonial-author">
+                                <div class="author-image"><img src="assets/images/testimonials/sajith-madhav.webp"
+                                        alt="Sajith Madhav"></div>
+                                <div class="author-details">
+                                    <h3 class="student-name">Sajith Madhav</h3>
+                                    <p class="student-location">Australia</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <div class="testimonial-body">
-                            <p class="student-feedback">Her ability to encourage, guide, and bring out the best in him
-                                has helped him grow into a confident and articulate learner. Beyond academics, she
-                                instilled values of discipline and self-belief.</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-image">
-                                <img src="assets/images/testimonials/sajith-madhav.png" alt="Sajith Madhav">
+
+                    <!-- Testimonial 4: Suneeva Ghosh -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-body">
+                                <p class="student-feedback">I am Suneeva Ghosh studying in DPS; Ruby Park class VII..I
+                                    am
+                                    learning French from Ranjita Ma'am from Class VI. She is a very good teacher and
+                                    clears all
+                                    my doubts. I am really pleased with her way of teaching French.
+                                </p>
                             </div>
-                            <div class="author-details">
-                                <h3 class="student-name">Sajith Madhav</h3>
-                                <p class="student-location">(Parent)</p>
+                            <div class="testimonial-author">
+                                <div class="author-image"><img src="assets/images/testimonials/suneeva-ghosh.webp"
+                                        alt="Suneeva Ghosh"></div>
+                                <div class="author-details">
+                                    <h3 class="student-name">Suneeva Ghosh</h3>
+                                    <p class="student-location">DPS, Ruby Park - Class VII</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5: Abhimannyu S. Ghosh -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-body">
+                                <p class="student-feedback">My son, Abhimannyu Shaurjja Ghosh
+                                    of Class 4, has shown remarkable
+                                    improvement in English under the
+                                    guidance of Mrs. Chatterjee. Her
+                                    dedication, punctuality, and
+                                    personalized approach have been
+                                    invaluable, and I wish to continue his
+                                    learning journey with her.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image"><img src="assets/images/testimonials/abhimannyu-ghosh.webp"
+                                        alt="Abhimannyu Shaurija Ghosh"></div>
+                                <div class="author-details">
+                                    <h3 class="student-name">Abhimannyu S. Ghosh</h3>
+                                    <p class="student-location">Sri Chaitanya Techno School (Parent's View)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6: JUNO CHA -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-body">
+                                <p class="student-feedback">Learning Experience with Mrs. Chatterjee -I am a Class 10
+                                    IGCSE
+                                    student at Calcutta International School, and Mrs. Chatterjee's English lessons have
+                                    helped
+                                    me immensely in improving my essay writing and comprehension skills.
+                                    She provided excellent resources, answer examples, and vocabulary support that were
+                                    extremely useful for the IGCSE curriculum.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image"><img src="assets/images/testimonials/juno-cha.webp"
+                                        alt="JUNO CHA">
+                                </div>
+                                <div class="author-details">
+                                    <h3 class="student-name">JUNO CHA</h3>
+                                    <p class="student-location">Calcutta International School, IGCSE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-body">
+                                <p class="student-feedback">Over the past few weeks, I have improved my reading
+                                    comprehension
+                                    and descriptive writing. I learned how to understand passages better and explain
+                                    them
+                                    clearly in my own words. This helped me to think more deeply about what I'm reading.
+                                    Also, I
+                                    was able to practice writing descriptions, which help me a lot to be confident in
+                                    expressing
+                                    my own ideas in a descriptive way. In addition, I slowly started to understand how
+                                    to
+                                    identify the main points for writing a summary. Even now I feel that I need more
+                                    practice
+                                    and learning but I hope this class will help me improve my English skills.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image"><img src="assets/images/testimonials/ijae-cha.webp"
+                                        alt="IJAE CHA">
+                                </div>
+                                <div class="author-details">
+                                    <h3 class="student-name">IJAE CHA</h3>
+                                    <p class="student-location">Calcutta International School, IGCSE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 8: Mudasser Javed Hassan -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-body">
+                                <p class="student-feedback">I wanted to express my sincere gratitude for being such an
+                                    exceptional teacher. Your passion for the French language and culture is truly
+                                    inspiring and contagious. Your engaging teaching methods and constant encouragement
+                                    have ignited a real interest in me to learn more and continue studying French. Your
+                                    class is always a highlight of my day.
+                                    Thank you for your dedication and for sharing your knowledge with such enthusiasm.
+                                </p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image"><img src="assets/images/testimonials/mudasser-javed-hassan.webp
+                                    " alt="Mudasser Javed Hassan">
+                                </div>
+                                <div class="author-details">
+                                    <h3 class="student-name">Mudasser Javed Hassan</h3>
+                                    <p class="student-location">Montreal, Canada</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <!-- Pagination (Indicators) -->
-            <div class="swiper-pagination"></div>
-            <!-- Navigation Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </section>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
 
-    <footer class="site-footer" id="contact">
-        © 2025 Edmusing Shield
-    </footer>
+    <a href="https://wa.me/916289849141" class="sticky-contact-button" id="stickyContactBtn" target="_blank">
+        <span class="contact-icon"><i class="fab fa-whatsapp"></i></span>
+        <span class="contact-text">
+            <span class="top-line">Contact </span>
+            <span class="bottom-line">Edmusing Shield</span>
+        </span>
+    </a>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-    <script src="mobile.js"></script>
-    <script src="animation.js"></script>
-    <script src="slider.js"></script>
+    <script src="js/common.js" data-base-path="./"></script>
 </body>
 
 </html>

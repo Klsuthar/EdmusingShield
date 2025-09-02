@@ -1,14 +1,140 @@
-EdmusingShield/
-├── index.html
-├── style.css
-├── banner.css
-├── mobile.css
-├── courses.css
-├── about.css          <-- YEH FILE BANAYEIN
-└── testimonials.css
-└── assets/
-    └── images/
-        └── testimonials/  <-- YEH FOLDER BANAYEIN
-            ├── khusshi-bedi.png
-            ├── sajith-madhav.png
-            └── riddhika-sarkar.png
+Folder PATH listing
+Volume serial number is 9AD8-5BA4
+C:.
+
+    about.html
+    contact.html
+    courses.html
+    footer.html
+    header.html
+    index.html
+    script.js
+    structure.txt
+    style.css
+    
+assets
+    animation
+        expert-faculty.json
+        global.json
+        personalized-learning.json
+        
+    documents
+        msme-certificate.pdf
+        
+    images
+        dr-arpita-de.jpeg
+        
+        banner
+            banner1.webp
+            banner2.webp
+            banner3.webp
+            banner4.webp
+            
+        certificate
+            euro-uk-accreditation.webp
+            international-certification-and-inspection-uk.webp
+            international-standards certification .webp
+            international-standards-certification.webp
+            iso-9001-logo.webp
+            iso-logo.webp
+            msme.webp
+            
+        favicon
+            android-chrome-192x192.png
+            android-chrome-512x512.png
+            apple-touch-icon.png
+            favicon-16x16.png
+            favicon-32x32.png
+            favicon.ico
+            site.webmanifest
+            
+        logo
+            edmusing-shield-font.png
+            edmusing-shield-font.webp
+            edmusing-shield-logo.png
+            edmusing-shield-logo.webp
+            
+        teachers
+            mteacher1.webp
+            mteacher2.webp
+            mteacher3.webp
+            mteacher4.webp
+            mteacher5.webp
+            mteacher6.webp
+            mteacher8.webp
+            teacher1.webp
+            teacher2.webp
+            teacher3.webp
+            teacher4.webp
+            teacher5.webp
+            teacher6.webp
+            teacher8.webp
+            
+        testimonials
+            abhimannyu-ghosh.webp
+            ijae-cha.webp
+            juno-cha.webp
+            khusshi-bedi.webp
+            mudasser-javed-hassan.webp
+            riddhika-sarkar.webp
+            sajith-madhav.webp
+            suneeva-ghosh.webp
+            
+    svg
+        flag
+            Flag_of_Australia.svg
+            Flag_of_Canada.svg
+            Flag_of_Hong_Kong.svg
+            Flag_of_India.svg
+            Flag_of_Ireland.svg
+            Flag_of_Japan.svg
+            Flag_of_Norway.svg
+            Flag_of_Singapore.svg
+            Flag_of_South_Korea.svg
+            Flag_of_Thailand.svg
+            Flag_of_United_Arab_Emirates.svg
+            Flag_of_United_States.svg
+            
+courses
+    empowerment
+        index.html
+        script.js
+        style.css
+        
+    english
+        english.html
+        script.js
+        style.css
+        
+    financial-literacy
+        financial-literacy.html
+        script.js
+        style.css
+        
+    foreign-languages
+        foreign-languages.html
+        script.js
+        style.css
+        
+    mathematics
+        mathematics.html
+        script.js
+        style.css
+        
+    other-courses
+        other-courses.html
+        script.js
+        style.css
+        
+    science
+        science.html
+        script.js
+        style.css
+        
+css
+    about.css
+    contact.css
+    home.css
+    
+js
+    common.js
