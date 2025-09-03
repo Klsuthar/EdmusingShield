@@ -4,7 +4,7 @@
 
 /* --- Page Background --- */
 .contact-page {
-    background: linear-gradient(135deg, #e6e9f0 0%, #eef1f5 100%);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
 }
 
 .contact-page .contact-section-v2 {
@@ -76,6 +76,26 @@
 
 .contact-page .social-icon-v2 i {
     color: #f0f0f0;
+}
+
+/* --- Email Us Card (First Contact Card) --- */
+.contact-page .contact-card:nth-child(1) {
+    background: linear-gradient(135deg, #4c63d2 0%, #5b2c87 100%) !important;
+}
+
+/* --- Call Us Card (Second Contact Card) --- */
+.contact-page .contact-card:nth-child(2) {
+    background: linear-gradient(135deg, #d63384 0%, #a91e47 100%) !important;
+}
+
+/* --- WhatsApp Card (Third Contact Card) --- */
+.contact-page .contact-card:nth-child(3) {
+    background: linear-gradient(135deg, #0d6efd 0%, #084298 100%) !important;
+}
+
+/* --- Social Media Wrapper --- */
+.contact-page .social-media-wrapper {
+    background: linear-gradient(135deg, #198754 0%, #0f5132 100%) !important;
 }
 
 

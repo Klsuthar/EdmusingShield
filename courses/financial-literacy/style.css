@@ -11,7 +11,7 @@
 
 /* Background */
 .financial-literacy-background {
-    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -34,14 +34,22 @@
     font-size: 4rem;
     font-weight: 800;
     margin-bottom: 20px;
-    color: #5c3d2e;
-    text-shadow: none;
+    color: #f0f0f0;
+    -webkit-text-stroke: 2px #000000;
+    text-stroke: 2px #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #f0f0f0, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .courses-header p {
     font-size: 1.2rem;
-    color: #5c3d2e;
+    color: white;
     font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* Tags */
@@ -53,14 +61,15 @@
 }
 
 .tag {
-    background-color: rgba(92, 61, 46, 0.1);
-    color: #5c3d2e;
+    background-color: rgba(0, 102, 255, 0.2);
+    color: white;
     padding: 8px 20px;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
-    border: 1px solid rgba(92, 61, 46, 0.2);
+    border: 2px solid #0066ff;
     transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .tag:hover {
@@ -99,14 +108,20 @@
 }
 
 /* Card Color Themes */
-.course-card:nth-child(3n + 1) {
-    background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%);
+.course-card:nth-child(1) {
+    background: linear-gradient(135deg, #343a40 0%, #495057 100%);
 }
-.course-card:nth-child(3n + 2) {
-    background: linear-gradient(135deg, #2c3e50 0%, #fd746c 100%);
+.course-card:nth-child(2) {
+    background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
 }
-.course-card:nth-child(3n + 3) {
-    background: linear-gradient(135deg, #00b09b 0%, #96c93d 100%);
+.course-card:nth-child(3) {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+.course-card:nth-child(4) {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+.course-card:nth-child(5) {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
 }
 
 

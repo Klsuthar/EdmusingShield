@@ -11,6 +11,7 @@ C:.
     script.js
     structure.txt
     style.css
+    vibrant-styles.css
     
 assets
     animation

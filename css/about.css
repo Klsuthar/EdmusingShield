@@ -33,6 +33,11 @@
     color: #f0f0f0;
 }
 
+/* --- Our Approach Card (Third Pillar) --- */
+.about-page .about-pillars .pillar-card:nth-child(3) {
+    background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%) !important;
+}
+
 /* --- "Why Us" Section --- */
 .about-page .why-us-section {
     background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
@@ -42,7 +47,10 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.about-page .why-us-section .section-header .section-title,
+.about-page .why-us-section .section-header .section-title {
+    color: #2c3e50 !important;
+}
+
 .about-page .why-us-section .section-header .section-subtitle {
     color: #fff;
 }
@@ -51,12 +59,12 @@
     background: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    color: #333;
+    color: #ffffff;
 }
 
 .about-page .why-us-section .feature-card h3,
 .about-page .why-us-section .feature-card p {
-    color: #333;
+    color: #ffffff;
 }
 
 /* --- "Accreditations" Section --- */
@@ -68,7 +76,10 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.about-page .accreditations-section .section-header .section-title,
+.about-page .accreditations-section .section-header .section-title {
+    color: #2c3e50 !important;
+}
+
 .about-page .accreditations-section .section-header .section-subtitle {
     color: #fff;
 }
@@ -87,8 +98,6 @@
 
 /* --- Text on Cards --- */
 .about-page .pillar-card h3,
-.about-page .founder-section-wrapper h2,
-.about-page .founder-section-wrapper h3,
 .about-page .pillar-card p,
 .about-page .founder-text blockquote,
 .about-page .founder-details .title,
@@ -96,6 +105,17 @@
 .about-page .stat .label {
     color: #f0f0f0;
     text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.about-page .founder-section-wrapper h2,
+.about-page .founder-section-wrapper h3 {
+    color: #2c3e50 !important;
+    text-shadow: none !important;
+}
+
+.about-page .founder-badge {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%) !important;
+    color: white !important;
 }
 
 .about-page .pillar-card:hover,
@@ -108,11 +128,29 @@
 
 /* --- Presence Section --- */
 .about-page .our-presence-section {
-    background: linear-gradient(135deg, #8989ba 0%, #9c96c8 100%);
+    background: linear-gradient(135deg, #ff7b7b 0%, #ff416c 100%);
     margin: 4rem 2rem;
     padding: 4rem 0;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.about-page .our-presence-section .section-header .section-title,
+.about-page .our-presence-section .section-header .section-subtitle {
+    color: #2c3e50 !important;
+    font-weight: 800 !important;
+    text-shadow: none !important;
+}
+
+/* --- All Feature Cards White Text --- */
+.about-page .why-us-features .feature-card {
+    color: #ffffff !important;
+}
+
+.about-page .why-us-features .feature-card h3,
+.about-page .why-us-features .feature-card p {
+    color: #ffffff !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
 
@@ -195,16 +233,28 @@
     }
 }
 
-/* --- Dark and Bold Text Overrides --- */
-.about-page .why-us-section .section-header .section-title,
+/* --- Dark Blue Headings --- */
+.about-page .section-title,
 .about-page .pillar-card h3,
 .about-page .founder-text h2,
 .about-page .founder-details h3,
+.about-page .why-us-features h3 {
+    color: #2c3e50 !important;
+    font-weight: 800 !important;
+    text-shadow: none !important;
+    background: none !important;
+    -webkit-text-fill-color: #2c3e50 !important;
+}
+
+.about-page .about-us-section .section-title {
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+    -webkit-text-stroke: 1px #2c3e50 !important;
+}
+
 .about-page .founder-details .title,
 .about-page .stat .number,
-.about-page .stat .label,
-.about-page .accreditations-section .section-header .section-title,
-.about-page .accreditations-section .section-header .section-subtitle {
+.about-page .stat .label {
     color: #2c3e50 !important;
     font-weight: 800 !important;
     text-shadow: none !important;

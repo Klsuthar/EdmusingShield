@@ -28,6 +28,11 @@
     text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
+/* --- Our Approach Card (Third Pillar) --- */
+.home-page .about-pillars .pillar-card:nth-child(3) {
+    background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%) !important;
+}
+
 /* --- Testimonial Cards --- */
 .home-page .testimonial-card {
     background: linear-gradient(135deg, #ff8c42 0%, #ff3f8b 100%);
